@@ -1,0 +1,45 @@
+name: terminal
+description: Bomoko Terminal - client SSH élégant par Bomoko Solution.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dartssh2: ^2.10.0
+  xterm: ^4.0.0
+  shared_preferences: ^2.2.3
+  flutter_secure_storage: ^9.2.2
+  google_fonts: ^6.2.1
+  url_launcher: ^6.3.0
+  file_picker: ^8.1.2
+  path_provider: ^2.1.4
+  wakelock_plus: ^1.2.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/icon_fg.png
+    - assets/icon/icon.png
+  fonts:
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/icon/icon.png
+  adaptive_icon_background: assets/icon/icon_bg.png
+  adaptive_icon_foreground: assets/icon/icon_fg.png
+  min_sdk_android: 21
